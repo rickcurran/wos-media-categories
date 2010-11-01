@@ -1,16 +1,9 @@
 /* MEDIA CATEGORIES JAVASCRIPT */
-jQuery(document).ready(function($) {
-	function getChecked() {
-		var n = $("#wos-media-categories-list input:checked").length;
-		var cat_checked = $("#wos-media-categories-list input:checked");
-		var cat_arr = $(cat_checked).map(function() {
-				return $(this).val();
-			}).get().join();
-		$('#media-single-form .media-single .media-item tr.category > td.field > input.text').val(cat_arr);
-    }
-	$('.wos-categories-cb').click(function() {
-		getChecked();
-	});
-	
-});
-
+function wos_category_click(cat){
+	var container = jQuery(cat).closest("tbody");
+	var cat_checked = jQuery(container).find("tr.all_categories input:checked");
+	var cat_arr = jQuery(cat_checked).map(function() {
+		return jQuery(this).val();
+	}).get().join();
+	jQuery(container).find("tr.category > td.field > input.text").val(cat_arr);
+}

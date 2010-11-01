@@ -60,7 +60,7 @@ function wos_media_categories($args) {
 			} else {
 				$chk = '';	
 			}
-			$option = '<li style="width:240px;float:left;"><input type="checkbox" class="wos-categories-cb" value="'.$category->category_nicename.'" id="'.$category->category_nicename.'" name="'.$category->category_nicename.'"'.$chk.'> ';
+			$option = '<li style="width:240px;float:left;"><input type="checkbox" onclick="wos_category_click(this)" class="wos-categories-cb" value="'.$category->category_nicename.'" id="'.$category->category_nicename.'" name="'.$category->category_nicename.'"'.$chk.'> ';
 			$option .= '<label for="'.$category->category_nicename.'">'.$category->cat_name.'</label>';
 			$option .= '</li>';
 			$all_cats .= $option;

@@ -10,6 +10,9 @@ Tested on: WP 3.0
 
 Enable an interface to allow management of categories on attachments in WordPress Media Library
 
+= 1.0.2 (01/Nov/2010) =
+Made changes to JavaScript moved the onclick trigger inline instead of binding it to onload to make it work whilst uploading files with the Flash bulk uploader. Thanks to Wordpress.stackexchange user DJBOKKA for the fix - http://wordpress.stackexchange.com/users/1328/djbokka
+
 = 1.0.1 (23/Aug/2010) =
 Added a Settings panel to enable you to set optional Parent Category ID field to restrict available categories to only children of a selected parent.
 

@@ -1,2 +1,2 @@
 /* WOS MEDIA CATEGORIES STYLES */
-form#media-single-form tr.category { display:none; }
+form#media-single-form tr.category,form#file-form tr.category { display:none; }
